@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Imgur Clone</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/46975b6ad5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Imgur</title>
+  </head>
+  <body>
+    <div class="Desktop_app App">
+      <div class="AppCover HomeCover NewCover isCollapse">
+        <div class="MoveContainer Navbar HomeNavbar">
+          <div class="NavbarContainer-left">
+            <div class="Navbar-logo-container">
+              <a href="/"> </a>
+            </div>
+            <a class="Button upload" href="/upload">
+              <img
+                src="https://s.imgur.com/desktop-assets/desktop-assets/icon-new-post.13ab64f9f36ad8f25ae3544b350e2ae1.svg"
+                alt=""
+              />
+              <span class="newPostLabel">NewPost</span>
+            </a>
+          </div>
+          <div class="NavbarContainer-center">
+            <div class="NavbarContainer-center-input-search">
+              <input type="text" />
+            </div>
+            <div class="NavbarContainer-center-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <div class="NavbarContainer-right">
+            <div class="Go-ad-free">
+              <button>GoAdFree</button>
+            </div>
+            <div class="SignIn">
+              <h5>SignIn</h5>
+            </div>
+            <div class="SignUp">
+              <button>SignUP</button>
+            </div>
+          </div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="images-grid"></div>
+    </div>
+  </body>
 </html>
