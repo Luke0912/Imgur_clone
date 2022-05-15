@@ -9,9 +9,31 @@ const data = async () => {
       },
     });
     let data = await res.json();
-    console.log(data);
+    for (var i = 0; i < data.data.length; i++) {
+      let img = data.data[i].images;
+      console.log(img);
+      if (img) {
+        for (var j = 0; j < img.length; j++) {
+          console.log(img[j]);
+          appenddata(img[j]);
+        }
+      }
+    }
   } catch (error) {
-    console.log(data);
+    console.log(error);
   }
 };
 data();
+
+function appenddata(images) {
+  var div = document.createElement("div");
+  var img = document.createElement("img");
+  if (images.link) {
+    if (images.type === "image/jpeg") {
+      img.setAttribute("class", "ham");
+      img.setAttribute("src", images.link);
+      div.append(img);
+      document.getElementById("images-grid").append(div);
+    }
+  }
+}
